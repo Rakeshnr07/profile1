@@ -71,6 +71,11 @@ body {
     display: flex;
     transform: translate(-50%, -50%) scale(1);
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 
 .front {
     background-color: rgb(0, 0, 0);
@@ -158,4 +163,15 @@ body {
   }
 .blur {
     filter: blur(5px);
+}
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Ensure the image covers the smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: cover; /* Ensure the image covers the smallest screens */
+    }
 }
